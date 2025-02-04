@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  animation: slide 12s linear infinite;
+  gap: 1px; /* Reduced gap between images */
+}
+
+.client-image {
+  min-width: 20%; /* Adjust based on how many images you want visible */
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.flip:hover .inner-flip {
+  transform: rotateY(180deg);
+}
+
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.section-title {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Flip card base styles */
+
